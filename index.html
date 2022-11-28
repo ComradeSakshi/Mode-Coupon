@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney clone</title>
+    <link rel="stylesheet" href="task.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+    <div id="main">
+    <nav class="navbar">
+        <img src="logo.png" class="brand-logo" alt="">
+        <ul class="nav-links">
+            <li class="nav-items"><a href="list.html">home</a></li>
+            <li class="nav-items"><a href="#">tv</a></li>
+            <li class="nav-items"><a href="#">movies</a></li>
+            <li class="nav-items"><a href="#">sports</a></li>
+        </ul>
+          </a>
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search">
+            <button class="sub-btn">subscribe</button>
+            <a href="#" class="login-link">login</a>
+
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            
+        </div>
+    </nav>
+
+    <div class="carousel-container">
+    <div class="carousel">
+        <div class="slider">
+            <div class="slide-content">
+                <h1 class="movie-title">loki</h1>
+                <p class="movie-des">Thor's adopted brother and the god of mischief, based on the Norse mythological deity of the same name.</p>
+            </div>
+            <img src="slider 1.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="video-card-container">
+    <div class="video-card">
+        <img src="disney.png" class="video-card-image" alt="">
+        <video src="disney.mp4" mute loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+        <img src="pixar.png" class="video-card-image" alt="">
+        <video src="pixar.mp4" mute loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+        <img src="marvel.png" class="video-card-image" alt="">
+        <video src="marvel.mp4" mute loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+        <img src="star-wars.png" class="video-card-image" alt="">
+        <video src="star-war.mp4" mute loop class="card-video"></video>
+    </div>
+    <div class="video-card">
+        <img src="geographic.png" class="video-card-image" alt="">
+        <video src="geographic.mp4" mute loop class="card-video"></video>
+    </div>
+</div>
+
+
+
+
+
+<div id="coupon"> 
+    
+    <button onClick="closeCoupon()" class="button">&times;</button>
+    <img src="cupon.webp"/>
+</div>
+
+
+
+
+
+
+
+
+<h1 class="title">recommended for you</h1>
+<div class="movies-list">
+    <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+    <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+    <div class="card-container">
+        <div class="card">
+            <img src="poster 1.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Loki</h2>
+                <h6 class="des">Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of "Avengers: Endgame."</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 2.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Mulan</h2>
+                <h6 class="des">A girl disguises as a male warrior and joins the imperial army in order to prevent her sick father from being forced to enlist as he has no male heir.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 3.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">The Falcon..</h2>
+                <h6 class="des">Falcon is a superhero appearing in American comic books published by Marvel Comics. </h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 4.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Avengers</h2>
+                <h6 class="des">After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 5.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Thor</h2>
+                <h6 class="des">The son of Odin uses his mighty abilities as the God of Thunder to protect his home Asgard and planet Earth alike.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 6.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Avengers in hindi</h2>
+                <h6 class="des">After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 7.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">pirates care..</h2>
+                <h6 class="des">Pirates of the Caribbean is an American fantasy swashbuckler film series produced by Jerry Bruckheimer and based on Walt Disney's theme park attraction of the same name. </h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+    </div>
+</div>
+
+<h1 class="title">latest and trending</h1>
+<div class="movies-list">
+    <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+    <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+    <div class="card-container">
+        <div class="card">
+            <img src="poster 8.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Soul</h2>
+                <h6 class="des">Soul is a 2020 American computer-animated musical comedy-drama film produced by Pixar Animation Studios and distributed by Walt Disney Studios Motion ....</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 9.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">raya</h2>
+                <h6 class="des">The son of Odin uses his mighty abilities as the God of Thunder to protect his home Asgard and planet Earth alike.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 10.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">luca</h2>
+                <h6 class="des">. Luca shares these adventures with his newfound best friend.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 11.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Ford v Ferrari</h2>
+                <h6 class="des">Ford v Ferrari is a 2019 American sports drama film directed by James Mangold and written by Jez Butterworth, John-Henry Butterworth, and Jason Keller.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 12.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">dark phoenix</h2>
+                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 6.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">Avengers</h2>
+                <h6 class="des">After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+
+        <div class="card">
+            <img src="poster 2.png" class="card-img" alt="">
+            <div class="card-body">
+                <h2 class="name">mulan</h2>
+                <h6 class="des">A girl disguises as a male warrior and joins the imperial army in order to prevent her sick father from being forced to enlist as he has no male heir.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div> 
+        
+    </div>
+</div>
+
+<h1 class="title">movies</h1>
+    <div class="movies-list">
+        <button class="pre-btn"><img src="images/pre.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
+        <div class="card-container">
+            <div class="card">
+                <img src="poster 11.png" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">ford v ferrari</h2>
+                    <h6 class="des">Ford v Ferrari is a 2019 American sports drama film directed by James Mangold and written by Jez Butterworth, John-Henry Butterworth, and Jason Keller.</h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div> 
+            
+            <div class="card">
+                <img src="poster 1.png" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">loki</h2>
+                    <h6 class="des">Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of "Avengers: Endgame.".</h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div> 
+
+            <div class="card">
+                <img src="poster 5.png" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">thor</h2>
+                    <h6 class="des">The son of Odin uses his mighty abilities as the God of Thunder to protect his home Asgard and planet Earth alike.</h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div> 
+
+            <div class="card">
+                <img src="poster 2.png" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">mulan</h2>
+                <h6 class="des">A girl disguises as a male warrior and joins the imperial army in order to prevent her sick father from being forced to enlist as he has no male heir.</h6>
+                <h6 class="des"></h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div> 
+
+            <div class="card">
+                <img src="poster 12.png" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">dark phoenix</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div> 
+
+            <div class="card">
+                <img src="poster 9.png" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">raya</h2>
+                    <h6 class="des">The son of Odin uses his mighty abilities as the God of Thunder to protect his home Asgard and planet Earth alike.</h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div> 
+
+            <div class="card">
+                <img src="poster 7.png" class="card-img" alt="">
+                <div class="card-body">
+                    <h2 class="name">pirates</h2>
+                    <h6 class="des">Pirates of the Caribbean is an American fantasy swashbuckler film series produced by Jerry Bruckheimer and based on Walt Disney's theme park attraction of the same name. </h6>
+                    <button class="watchlist-btn">add to watchlist</button>
+                </div>
+            </div> 
+
+
+
+        </div>
+   </div>
+   <footer>
+    <p><h2> &copy; ComradeSakshi &hearts;</h2></p>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/comrade-sakshi-a64737249/" target="_blank">
+            <img src="https://i.ibb.co/k0f4kDd/facebook.png" alt="fb" class="socialIcon"/>
+        </a>
+        <a href="https://www.instagram.com/comrade_sakshi/" target="_blank">
+            <img src="https://i.ibb.co/19H5LvT/insta.png" alt="fb" class="socialIcon"/>
+        </a>
+    </div>
+
+
+   </footer>
+</div>
+<script>
+    window.onload = loadCoupon()
+    
+function loadCoupon(){
+    document.getElementById('coupon').style.visibility = 'visible';
+    document.getElementById('main').style.opacity='0.7';
+}
+
+function closeCoupon(){
+    document.getElementById('coupon').style.visibility = 'hidden';
+    document.getElementById('main').style.opacity='1';
+}
+
+</script>
+<script>
+    const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        body.style.background = '#0c111b';
+        body.style.color = 'white';
+        body.style.transition = '2s';
+    }else{
+        
+
+        body.style.background = 'white';
+        body.style.color = '#0c111b';
+        body.style.transition = '2s';
+    }
+});
+
+
+</script>
+   <script src="task.js" async></script>
+</body>
+</html>
